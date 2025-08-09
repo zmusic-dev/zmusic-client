@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[9,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "zmusic-client"
+version = "${version}"
+displayName = "ZMusic Client"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.zmusic-client]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zmusic-client]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zmusic-client]]
+modId = "architectury"
+type = "required"
+versionRange = "[17.0.6,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "zmusic-client.mixins.json"

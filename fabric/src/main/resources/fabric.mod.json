@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "zmusic-client",
+  "version": "${version}",
+  "name": "ZMusic Client",
+  "description": "Cross-platform Music System for Minecraft",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/zmusic-client/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.zhenxin.zmusic.fabric.ZMusicModFabric"
+    ],
+    "client": [
+      "me.zhenxin.zmusic.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "zmusic-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.1",
+    "minecraft": "~1.21.7",
+    "java": ">=21",
+    "architectury": ">=17.0.6",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
