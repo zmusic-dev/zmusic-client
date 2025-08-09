@@ -32,6 +32,13 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew clean build --no-daemon
+      # Fabric 1.21.8
+      - name: Upload Artifact (Fabric 1.21.8)
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'ZMusic Fabric 1.21.8'
+          path: |
+            zmusic-fabric/zmusic-fabric-1.21.8/build/libs/**.jar
       # Fabric 1.21
       - name: Upload Artifact (Fabric 1.21)
         uses: actions/upload-artifact@v4
