@@ -29,6 +29,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
+            zmusic-fabric/zmusic-fabric-1.21.8/build/libs/**.jar
             zmusic-fabric/zmusic-fabric-1.14.4/build/libs/**.jar
             zmusic-fabric/zmusic-fabric-1.15.2/build/libs/**.jar
             zmusic-fabric/zmusic-fabric-1.16.5/build/libs/**.jar
